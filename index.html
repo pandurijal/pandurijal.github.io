@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/ico" href="favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Pandu Rijal Pasa - Frontend Engineer | Web & Mobile Developer</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="main-content">
+      <section class="header">
+        <h1 class="header__headline">Hi, Pandu here! 👋</h1>
+        <h2 class="header__sub-headline">
+          I craft products that your user will love.
+        </h2>
+      </section>
+      <section class="social">
+        <a
+          class="social__icon"
+          href="https://linkedin.com/in/pandurijal"
+          target="_blank"
+          ><img src="./icon-linkedin.svg" alt="icon-linkedin"
+        /></a>
+        <a
+          class="social__icon"
+          href="https://twitter.com/pandurijal"
+          target="_blank"
+          ><img src="./icon-twitter.svg" alt="icon-twitter"
+        /></a>
+        <a
+          class="social__icon"
+          href="https://instagram.com/pandurijal"
+          target="_blank"
+          ><img src="./icon-instagram.svg" alt="icon-instagram"
+        /></a>
+        <a
+          class="social__icon"
+          href="https://facebook.com/pandurijal"
+          target="_blank"
+          ><img src="./icon-facebook.svg" alt="icon-facebook"
+        /></a>
+      </section>
+      <section class="portfolio">
+        <button onclick="togglePortfolio()" class="portfolio__button">
+          Here is what I have built
+        </button>
+        <div id="portfolio-content" class="portfolio__content">
+          <ul class="portfolio__item-wrapper">
+            <li class="portfolio__item">
+              <a href="https://pandurijal.github.io/tokoflix" target="_blank"
+                ><p class="portfolio__item-title">Tokoflix</p></a
+              >
+              <p class="portfolio__item-desc">
+                A simple marketplace for movies, built with React.js
+              </p>
+            </li>
+            <li class="portfolio__item">
+              <a
+                href="https://pandurijal.github.io/react-giphy"
+                target="_blank"
+              >
+                <p class="portfolio__item-title">React Giphy</p></a
+              >
+              <p class="portfolio__item-desc">
+                A lightweight search engine for .gif images built with react.
+                Based on Giphy API.
+              </p>
+            </li>
+            <li class="portfolio__item">
+              <a href="https://pandurijal.github.io/loremi" target="_blank">
+                <p class="portfolio__item-title">Loremi</p></a
+              >
+              <p class="portfolio__item-desc">
+                A simple lorem ipsum generator apps built with ReactJS.
+              </p>
+            </li>
+            <li class="portfolio__item">
+              <a href="https://pandurijal.github.io/loremi" target="_blank">
+                <p class="portfolio__item-title">React Quotes Mobile</p></a
+              >
+              <p class="portfolio__item-desc">
+                Generate a random quote with only one click. Built with React
+                Native & Expo.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function togglePortfolio() {
+        const item = document.getElementById("portfolio-content");
+        console.log({ item });
+        if (item.classList.contains("portfolio__content-active")) {
+          item.classList.remove("portfolio__content-active");
+        } else {
+          item.classList.add("portfolio__content-active");
+        }
+        // if (item.style.display === "block") {
+        //   item.style.display === "none";
+        // } else {
+        //   item.style.display === "block";
+        // }
+      }
+    </script>
+  </body>
 </html>

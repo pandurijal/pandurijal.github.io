@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+body {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a,
+p {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.main-content {
+  padding-top: 4em;
+  padding: 2em;
+  height: 100vh;
+  background-color: white;
+}
+
+.header__headline {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+
+.header__sub-headline {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.social {
+  margin: 1em auto;
+  width: 50%;
+  flex-direction: row;
+  justify-content: "space-around";
+}
+
+.social__icon {
+  opacity: 0.8;
+}
+
+.social__icon:hover {
+  opacity: 1;
+}
+
+.social__icon img {
+  width: 2em;
+  margin: 0 0.2em;
+}
+
+.portfolio {
+}
+
+.portfolio__button {
+  color: white;
+  background-color: black;
+  border: solid 1px white;
+  padding: 1em 2em;
+}
+
+.portfolio__button:hover {
+  color: black;
+  cursor: pointer;
+  border: solid 1px black;
+  background-color: white;
+}
+
+.portfolio__content {
+  /* position: relative;
+  overflow-y: auto; */
+  display: none;
+}
+
+.portfolio__content-active {
+  display: block;
+}
+
+.portfolio__item-wrapper {
+  text-align: left;
+  width: 50%;
+  margin: 1em auto;
+  /* position: absolute;
+  top: 190px; */
+}
+
+.portfolio__item {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.portfolio__item-title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0.25em;
+}
+
+.portfolio__item-desc {
+  font-size: 1em;
+}
