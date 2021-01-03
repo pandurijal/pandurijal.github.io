@@ -196,7 +196,7 @@ export default function Home() {
                 Hi, Pandu here! 👋
               </h1>
               <h2 className="mb-4 text-xl sm:text-2xl font-semibold">
-                I craft products that your user will love.
+                I craft products that your users will love.
               </h2>
             </section>
             <section>
