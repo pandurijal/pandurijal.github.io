@@ -26,7 +26,39 @@ const socmedList = [
 
 const portfolioList = [
   {
-    id: "tokoflix",
+    id: "rameshclinic",
+    title: "Ramesh Clinic",
+    desc: "Personal website of dr. Ashwin Ramesh.",
+    url: {
+      live: "https://rameshclinic.com",
+    },
+  },
+  {
+    id: "deepertalk",
+    title: "DeeperTalk",
+    desc: "Conversation starter generator for deep talk questions.",
+    url: {
+      live: "https://deepertalk.co",
+    },
+  },
+  {
+    id: "pantjoranpik",
+    title: "Pantjoran PIK",
+    desc: "Restaurant directory for a notable foodcourt.",
+    url: {
+      live: "https://pantjoranpik.tokoko.id",
+    },
+  },
+  {
+    id: "bridelink",
+    title: "BrideLink",
+    desc: "Online wedding invitation service.",
+    url: {
+      live: "https://bridelink.co",
+    },
+  },
+  {
+    id: "99usahaku",
     title: "99% Usahaku (Telkomsel)",
     desc: "Learning and marketplace platform for Small-Medium Enterprises.",
     url: {
@@ -36,8 +68,7 @@ const portfolioList = [
   {
     id: "bernas-id",
     title: "Bernas ID (Hebat Group)",
-    desc:
-      "Online news website that provide popular & reliable article for domestic update. ",
+    desc: "Online news website that provide popular & reliable article for domestic update. ",
     url: {
       live: "https://bernas.id",
     },
@@ -54,8 +85,7 @@ const portfolioList = [
   {
     id: "react-giphy",
     title: "React Giphy",
-    desc:
-      "A lightweight search engine for .gif images built with react. Based on Giphy API.",
+    desc: "A lightweight search engine for .gif images built with react. Based on Giphy API.",
     url: {
       live: "https://pandurijal.github.io/react-giphy",
       repo: "https://github.com/pandurijal/react-giphy",
@@ -73,8 +103,7 @@ const portfolioList = [
   {
     id: "react-quotes-mobile",
     title: "React Quotes Mobile",
-    desc:
-      "Generate a random quote with only one click. Built with React Native & Expo.",
+    desc: "Generate a random quote with only one click. Built with React Native & Expo.",
     url: {
       live: "https://pandurijal.github.io/react-quotes-mobile",
       repo: "https://github.com/pandurijal/react-quotes-mobile",
@@ -83,8 +112,7 @@ const portfolioList = [
   {
     id: "image-prediction",
     title: "Image Prediction",
-    desc:
-      "Predicting single image with machine learning dataset from Tensorflow.",
+    desc: "Predicting single image with machine learning dataset from Tensorflow.",
     url: {
       repo: "https://github.com/pandurijal/image-prediction",
     },
@@ -92,8 +120,7 @@ const portfolioList = [
   {
     id: "webcam-prediction",
     title: "Webcam Prediction",
-    desc:
-      "Predicting video from webcame with machine learning dataset from Tensorflow.",
+    desc: "Predicting video from webcame with machine learning dataset from Tensorflow.",
     url: {
       repo: "https://github.com/pandurijal/webcam-prediction",
     },
@@ -101,8 +128,7 @@ const portfolioList = [
   {
     id: "",
     title: "Recipebook",
-    desc:
-      "Food recipes directory for who love to cook. Built with Bootstrap + ReactJS.",
+    desc: "Food recipes directory for who love to cook. Built with Bootstrap + ReactJS.",
     url: {
       repo: "https://github.com/pandurijal/recipebook",
     },
@@ -253,7 +279,7 @@ export default function Home() {
             <section>
               <div className="bg-white my-6 sm:w-full md:w-3/4 mx-auto">
                 <p
-                  className="text-sm hover:cursor-pointer mb-4"
+                  className="text-sm cursor-pointer mb-4"
                   onClick={togglePortfolio}
                 >
                   Back
